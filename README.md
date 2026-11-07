@@ -1,8 +1,20 @@
-<p align="center"><b>iNi</b> presents</p>
+<div align="center">
 
-# 🦋 Butterfly Compressor
+# 🦋 BUTTERFLY COMPRESSOR
+### by iNi
 
-**A multiband stereo-width "compressor" that is triggered by a sidechain or by your DAW's tempo.**
+**A multiband stereo-width "compressor" triggered by a sidechain or by your DAW's tempo.**
+VST3 · AU · Standalone. For Windows and macOS.
+
+<br>
+
+<a href="https://github.com/fredchicoine/ButterflyCompressor/releases/latest/download/ButterflyCompressor-Windows-Setup.exe"><img src="https://img.shields.io/badge/DOWNLOAD-WINDOWS-e0202a?style=for-the-badge&logo=windows&logoColor=white" height="56" alt="Download for Windows"></a>
+&nbsp;&nbsp;
+<a href="https://github.com/fredchicoine/ButterflyCompressor/releases/latest/download/ButterflyCompressor-Mac.pkg"><img src="https://img.shields.io/badge/DOWNLOAD-MAC-e0202a?style=for-the-badge&logo=apple&logoColor=white" height="56" alt="Download for Mac"></a>
+
+<sub>Windows 10/11 (64-bit) · macOS 11 or later, Apple Silicon and Intel · <a href="https://github.com/fredchicoine/ButterflyCompressor/releases">all versions</a> · <a href="MANUAL.md"><b>User Manual</b></a></sub>
+
+</div>
 
 Instead of turning the volume down when the kick hits, Butterfly **opens up the stereo image** of the frequencies you choose, up to **110%** width, then lets it fall back to normal. Your mix breathes in width instead of volume.
 
