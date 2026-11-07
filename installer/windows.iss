@@ -34,6 +34,7 @@ Name: "standalone"; Description: "Standalone application"; Types: full
 Source: "..\build\ButterflyCompressor_artefacts\Release\VST3\Butterfly Compressor.vst3\*"; DestDir: "{commoncf64}\VST3\Butterfly Compressor.vst3"; Components: vst3; Flags: ignoreversion recursesubdirs createallsubdirs
 Source: "..\build\ButterflyCompressor_artefacts\Release\Standalone\Butterfly Compressor.exe"; DestDir: "{app}"; Components: standalone; Flags: ignoreversion
 Source: "..\README.md"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\MANUAL.md"; DestDir: "{app}"; Flags: ignoreversion
 
 [Icons]
 Name: "{group}\Butterfly Compressor"; Filename: "{app}\Butterfly Compressor.exe"; Components: standalone

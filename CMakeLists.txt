@@ -55,3 +55,13 @@ target_link_libraries(ButterflyCompressor
         juce::juce_recommended_config_flags
         juce::juce_recommended_lto_flags
         juce::juce_recommended_warning_flags)
+
+# Optional: renders docs/screenshot.png with live test audio (cmake -DBFLY_SCREENSHOT=ON)
+option(BFLY_SCREENSHOT "Build the screenshot tool" OFF)
+if(BFLY_SCREENSHOT)
+    juce_add_console_app(BflyScreenshot PRODUCT_NAME "BflyScreenshot")
+    target_sources(BflyScreenshot PRIVATE Tools/Screenshot.cpp Source/PluginProcessor.cpp Source/PluginEditor.cpp)
+    target_compile_definitions(BflyScreenshot PRIVATE JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0
+        JucePlugin_Name="Butterfly Compressor" JucePlugin_Build_Standalone=0 JUCE_MODAL_LOOPS_PERMITTED=1)
+    target_link_libraries(BflyScreenshot PRIVATE juce::juce_audio_utils juce::juce_dsp juce::juce_recommended_config_flags)
+endif()
